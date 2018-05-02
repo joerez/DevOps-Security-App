@@ -64,6 +64,27 @@
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
+
+    .changeBtn {
+      background: #e74c3c;
+      color: white;
+      width: 100px;
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 25px;
+      transition: all 200ms;
+      margin-right: 5px;
+      margin-top: 10px;
+    }
+
+    .changeBtn:hover {
+      background: #e74c3c;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(190,30,30,.3);
+    }
+
   </style>
 </head>
 <body>
@@ -103,8 +124,8 @@
       </form>
       <div class="colors">
         <h4>BG COLOR: {{#if bg_color}}#{{{bg_color}}}{{else}}#eee{{/if}}</h4>
-        <span><a href="/?bg=eef" style='color: #eef; background-color: #333;'>Light Blue</a></span>
-        <span><a href="/?bg=eee" style='color: #eee; background-color: #333;'>Light Grey</a></span>
+        <span><a href="/?bg=eef" class="changeBtn" >Light Blue</a></span>
+        <span><a href="/?bg=eee" class="changeBtn">Light Grey</a></span>
       </div>
     {{/if}}
     <main>
